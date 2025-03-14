@@ -55,13 +55,6 @@ app.use('/graphql',graphqlHTTP({
             
         },
         createEvent:(args)=>{
-        //   const event ={
-        //     _id:Math.random().toString(),
-        //     title:args.eventInput.title,
-        //     description:args.eventInput.description,
-        //     price:+args.eventInput.price,
-        //     date:args.eventInput.date
-        //   }
         const event = new Event({
             title:args.eventInput.title,
             description:args.eventInput.description,
