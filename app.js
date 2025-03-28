@@ -8,8 +8,6 @@ const Event = require('./models/event')
 
 const app=express();
 
-// const events =[];
-
 app.use(bodyParser.json());
 
 app.use('/graphql',graphqlHTTP({
